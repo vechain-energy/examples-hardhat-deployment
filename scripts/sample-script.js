@@ -24,7 +24,7 @@ async function main() {
 
   const deployedGreeter = await hre.thor.getContractAt('Greeter', greeter.address)
   const greeting = await deployedGreeter.greet()
-  console.log("Greeter responsed with:", greeting)
+  console.log("Greeter responded with:", greeting)
 
 }
 
