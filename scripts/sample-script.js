@@ -23,8 +23,13 @@ async function main() {
   console.log("Greeter deployed to:", greeter.address);
 
   const deployedGreeter = await hre.thor.getContractAt('Greeter', greeter.address)
+
   const greeting = await deployedGreeter.greet()
   console.log("Greeter responded with:", greeting)
+
+  await deployedGreeter.setGreeting('Hello, VeChain-Thor')
+  const greetingModified = await deployedGreeter.greet()
+  console.log("After update Greeter responded with:", greetingModified)
 
 }
 
