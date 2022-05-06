@@ -12,6 +12,6 @@
     "hardhat": "^2.9.3"
   },
   "dependencies": {
-    "@vechain.energy/hardhat-thor": "^0.1.2"
+    "@vechain.energy/hardhat-thor": "^0.2.3"
   }
 }
